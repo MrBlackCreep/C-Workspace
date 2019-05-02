@@ -87,12 +87,13 @@ int main() {
     //file for starting point/distance plot
     FILE * fp2;
     fp2 = fopen("points2.dat", "w+");
-    
+
     double i;
     for (i=0.001; i<1;i=i+0.001) {
         fprintf(fp2, "%f %f\n", i, simulate(i, 500));
-        printf("%f\n",i);
     }
     fclose(fp2);
+    printf("Curve length for y_0 = 0.9: %f\n", simulate(0.9,500));
+    printf("Curve length for y_0 = 0.999: %f", simulate(0.999,500));
     return 0;
 }
