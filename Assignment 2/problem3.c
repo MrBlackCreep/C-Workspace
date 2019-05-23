@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include <time.h>   	// for clock_t, clock(), CLOCKS_PER_SEC
-#include <unistd.h> 	// for sleep()
 
 
 int main() {
